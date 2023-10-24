@@ -27,11 +27,11 @@ module Full_Adder_tb();
     reg Cin;
     
     // output
-    wire Cout;
     wire Sum;
+    wire Cout;
     
-    // instatntiate the unit under test
-    Full_Adder uut(A, B, Cin, Cout, Sum);
+        // instatntiate the unit under test
+    Full_Adder uut(A, B, Cin, Sum, Cout);
     
     initial
     begin
@@ -40,5 +40,12 @@ module Full_Adder_tb();
         Cin = 0;
     end
     
-    initial always #1 Cin = ~Cin;
+    always #1 Cin = ~Cin;
+    always #2 B = B + 1'b1;
+    always #4 A = A + 1'b1;
+    
+    initial $display("A = %b, B = %b, Cin = %b, S = %b, Cout = %b", A, B, Cin, Sum, Cout);
+    initial $monitor("A = %b, B = %b, Cin = %b, S = %b, Cout = %b", A, B, Cin, Sum, Cout);
+    initial #10 $finish;
+    
 endmodule

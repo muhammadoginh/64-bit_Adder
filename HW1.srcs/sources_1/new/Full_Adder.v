@@ -24,8 +24,8 @@ module Full_Adder(
     input A,
     input B,
     input Cin,
-    output Cout,
-    output Sum
+    output Sum,
+    output Cout
     );
     
     // Implementation of Full Adder using Dataflow Level Abstraction
