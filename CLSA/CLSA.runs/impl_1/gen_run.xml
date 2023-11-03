@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xczu5ev-sfvc784-1-i" LaunchTime="1698968570">
+  <File Type="ROUTE-PWR" Name="CSLA_64bit_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="CSLA_64bit.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="CSLA_64bit_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="CSLA_64bit_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="CSLA_64bit.msk"/>
+  <File Type="ROUTE-CLK" Name="CSLA_64bit_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="CSLA_64bit.vdi"/>
+  <File Type="BG-BIT" Name="CSLA_64bit.bit"/>
+  <File Type="BG-DRC" Name="CSLA_64bit.drc"/>
+  <File Type="BG-BGN" Name="CSLA_64bit.bgn"/>
+  <File Type="BG-BIN" Name="CSLA_64bit.bin"/>
+  <File Type="BITSTR-RBT" Name="CSLA_64bit.rbt"/>
+  <File Type="BITSTR-NKY" Name="CSLA_64bit.nky"/>
+  <File Type="BITSTR-BMM" Name="CSLA_64bit_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="CSLA_64bit.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="CSLA_64bit_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="CSLA_64bit.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="CSLA_64bit.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="CSLA_64bit_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="CSLA_64bit.hwdef"/>
+  <File Type="PLACE-IO" Name="CSLA_64bit_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="CSLA_64bit_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="CSLA_64bit_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="CSLA_64bit_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="CSLA_64bit_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="CSLA_64bit_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="CSLA_64bit_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="CSLA_64bit_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="CSLA_64bit_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="CSLA_64bit_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="CSLA_64bit_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="CSLA_64bit_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="CSLA_64bit_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="CSLA_64bit_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="CSLA_64bit_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="CSLA_64bit_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="CSLA_64bit_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="CSLA_64bit_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="CSLA_64bit_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="CSLA_64bit_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="CSLA_64bit_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="CSLA_64bit_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="CSLA_64bit_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="CSLA_64bit_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="CSLA_64bit_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CSLA_64bit_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CSLA_64bit_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="CSLA_64bit_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CSLA_64bit_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="CSLA_64bit.pdi"/>
+  <File Type="RCFI_FILE" Name="CSLA_64bit.rcfi"/>
+  <File Type="CFI_FILE" Name="CSLA_64bit.cfi"/>
+  <File Type="RNPI_FILE" Name="CSLA_64bit.rnpi"/>
+  <File Type="NPI_FILE" Name="CSLA_64bit.npi"/>
+  <File Type="RBD_FILE" Name="CSLA_64bit.rbd"/>
+  <File Type="ROUTE-RQS" Name="CSLA_64bit_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="CSLA_64bit_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/CSLA_4bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Full_Adder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RCA_4bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CSLA_64bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="CSLA_64bit"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Full_Adder.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

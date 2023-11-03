@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../SQRT_CLSA.srcs/sources_1/new/Carry_Select_Adder_10bit.v" \
+"../../../../SQRT_CLSA.srcs/sources_1/new/Carry_Select_Adder_11bit.v" \
+"../../../../SQRT_CLSA.srcs/sources_1/new/Carry_Select_Adder_4bit.v" \
+"../../../../SQRT_CLSA.srcs/sources_1/new/Carry_Select_Adder_5bit.v" \
+"../../../../SQRT_CLSA.srcs/sources_1/new/Carry_Select_Adder_6bit.v" \
+"../../../../SQRT_CLSA.srcs/sources_1/new/Carry_Select_Adder_7bit.v" \
+"../../../../SQRT_CLSA.srcs/sources_1/new/Carry_Select_Adder_8bit.v" \
+"../../../../SQRT_CLSA.srcs/sources_1/new/Carry_Select_Adder_9bit.v" \
+"../../../../SQRT_CLSA.srcs/sources_1/new/Full_Adder.v" \
+"../../../../SQRT_CLSA.srcs/sources_1/new/Ripple_Carry_adder_4bit.v" \
+"../../../../SQRT_CLSA.srcs/sources_1/new/SQRT_CSLA_64bit.v" \
+"../../../../SQRT_CLSA.srcs/sim_1/new/SQRT_CSLA_64bit_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

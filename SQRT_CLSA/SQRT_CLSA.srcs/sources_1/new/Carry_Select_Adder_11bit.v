@@ -1,0 +1,69 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 11/03/2023 09:06:33 AM
+// Design Name: 
+// Module Name: Carry_Select_Adder_11bit
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module Carry_Select_Adder_11bit(
+    input [10:0] A,
+    input [10:0] B,
+    input Cin,
+    output Cout,
+    output [10:0] Sum
+    );
+    
+    // intermediate
+    wire [10:0] Sum0; // sum for "0" carry propagation
+    wire [10:0] Sum1; // sum for "1" carry propagation
+    wire [9:0] Carry0; // intermediate for "0" carry propagation
+    wire [9:0] Carry1; // intermediate for "1" carry propagation
+    wire Cout0; // result for "0" carry propagation
+    wire Cout1; // result for "1" carry propagation
+    
+    // "0" carry propogation
+    Full_Adder FA0_1(A[0],B[0],1'b0,Carry0[0],Sum0[0]);
+    Full_Adder FA0_2(A[1],B[1],Carry0[0],Carry0[1],Sum0[1]);
+    Full_Adder FA0_3(A[2],B[2],Carry0[1],Carry0[2],Sum0[2]);
+    Full_Adder FA0_4(A[3],B[3],Carry0[2],Carry0[3],Sum0[3]);
+    Full_Adder FA0_5(A[4],B[4],Carry0[3],Carry0[4],Sum0[4]);
+    Full_Adder FA0_6(A[5],B[5],Carry0[4],Carry0[5],Sum0[5]);
+    Full_Adder FA0_7(A[6],B[6],Carry0[5],Carry0[6],Sum0[6]);
+    Full_Adder FA0_8(A[7],B[7],Carry0[6],Carry0[7],Sum0[7]);
+    Full_Adder FA0_9(A[8],B[8],Carry0[7],Carry0[8],Sum0[8]);
+    Full_Adder FA0_10(A[9],B[9],Carry0[8],Carry0[9],Sum0[9]);
+    Full_Adder FA0_11(A[10],B[10],Carry0[9],Cout0,Sum0[10]);
+    
+    // "1" carry propogation
+    Full_Adder FA1_1(A[0],B[0],1'b1,Carry1[0],Sum1[0]);
+    Full_Adder FA1_2(A[1],B[1],Carry1[0],Carry1[1],Sum1[1]);
+    Full_Adder FA1_3(A[2],B[2],Carry1[1],Carry1[2],Sum1[2]);
+    Full_Adder FA1_4(A[3],B[3],Carry1[2],Carry1[3],Sum1[3]);
+    Full_Adder FA1_5(A[4],B[4],Carry1[3],Carry1[4],Sum1[4]);
+    Full_Adder FA1_6(A[5],B[5],Carry1[4],Carry1[5],Sum1[5]);
+    Full_Adder FA1_7(A[6],B[6],Carry1[5],Carry1[6],Sum1[6]);
+    Full_Adder FA1_8(A[7],B[7],Carry1[6],Carry1[7],Sum1[7]);
+    Full_Adder FA1_9(A[8],B[8],Carry1[7],Carry1[8],Sum1[8]);
+    Full_Adder FA1_10(A[9],B[9],Carry1[8],Carry1[9],Sum1[9]);
+    Full_Adder FA1_11(A[10],B[10],Carry1[9],Cout1,Sum1[10]);
+    
+    // Select the correct sum and carry outputs based on the carry-in signal
+    assign Sum = (Cin) ? Sum1 : Sum0;
+    assign Cout = (Cin) ? Cout1 : Cout0;
+    
+endmodule
